@@ -69,28 +69,28 @@ include CMakeFiles/day-01.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/day-01.dir/flags.make
 
-CMakeFiles/day-01.dir/day-01.cpp.o: CMakeFiles/day-01.dir/flags.make
-CMakeFiles/day-01.dir/day-01.cpp.o: /Users/miles/Desktop/dev/aoc-2024/day-01.cpp
-CMakeFiles/day-01.dir/day-01.cpp.o: CMakeFiles/day-01.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/miles/Desktop/dev/aoc-2024/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/day-01.dir/day-01.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/day-01.dir/day-01.cpp.o -MF CMakeFiles/day-01.dir/day-01.cpp.o.d -o CMakeFiles/day-01.dir/day-01.cpp.o -c /Users/miles/Desktop/dev/aoc-2024/day-01.cpp
+CMakeFiles/day-01.dir/day-01/day-01.cpp.o: CMakeFiles/day-01.dir/flags.make
+CMakeFiles/day-01.dir/day-01/day-01.cpp.o: /Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp
+CMakeFiles/day-01.dir/day-01/day-01.cpp.o: CMakeFiles/day-01.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/miles/Desktop/dev/aoc-2024/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/day-01.dir/day-01/day-01.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/day-01.dir/day-01/day-01.cpp.o -MF CMakeFiles/day-01.dir/day-01/day-01.cpp.o.d -o CMakeFiles/day-01.dir/day-01/day-01.cpp.o -c /Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp
 
-CMakeFiles/day-01.dir/day-01.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/day-01.dir/day-01.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/miles/Desktop/dev/aoc-2024/day-01.cpp > CMakeFiles/day-01.dir/day-01.cpp.i
+CMakeFiles/day-01.dir/day-01/day-01.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/day-01.dir/day-01/day-01.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp > CMakeFiles/day-01.dir/day-01/day-01.cpp.i
 
-CMakeFiles/day-01.dir/day-01.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/day-01.dir/day-01.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/miles/Desktop/dev/aoc-2024/day-01.cpp -o CMakeFiles/day-01.dir/day-01.cpp.s
+CMakeFiles/day-01.dir/day-01/day-01.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/day-01.dir/day-01/day-01.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp -o CMakeFiles/day-01.dir/day-01/day-01.cpp.s
 
 # Object files for target day-01
 day__01_OBJECTS = \
-"CMakeFiles/day-01.dir/day-01.cpp.o"
+"CMakeFiles/day-01.dir/day-01/day-01.cpp.o"
 
 # External object files for target day-01
 day__01_EXTERNAL_OBJECTS =
 
-day-01: CMakeFiles/day-01.dir/day-01.cpp.o
+day-01: CMakeFiles/day-01.dir/day-01/day-01.cpp.o
 day-01: CMakeFiles/day-01.dir/build.make
 day-01: CMakeFiles/day-01.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/miles/Desktop/dev/aoc-2024/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable day-01"

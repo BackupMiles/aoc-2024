@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/miles/Desktop/dev/aoc-2024/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.3 -o CMakeFiles/day-01.dir/day-01/day-01.cpp.o -c /Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp",
+  "file": "/Users/miles/Desktop/dev/aoc-2024/day-01/day-01.cpp",
+  "output": "CMakeFiles/day-01.dir/day-01/day-01.cpp.o"
+}
+]
