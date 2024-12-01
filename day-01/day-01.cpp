@@ -11,6 +11,7 @@
  */
 
 // forward declaration for increased swaggery
+int calculate_similarity(std::vector<int>& lefties, std::vector<int>& righties);
 void populate_lists(const std::string& line, std::vector<int>& lefties, std::vector<int>& righties);
 void sort_list(std::vector<int>& list);
 
@@ -47,7 +48,11 @@ int main() {
 
     inputFile.close();
 
-    std::cout << sum;
+    // part 2
+    int similarity_score = calculate_similarity(lefties, righties);
+    std::cout << "Sum: " << sum << std::endl;
+    std::cout << "Similarity score: " << similarity_score << std::endl;
+
     // success
     return 0;
 }
@@ -71,4 +76,24 @@ void sort_list(std::vector<int>& list) {
     std::sort(list.begin(), list.end(), [](int a, int b) {
         return a < b;
     });
+}
+
+int calculate_similarity(std::vector<int>& lefties, std::vector<int>& righties) {
+    int sum = 0;
+
+    for (int i = 0; i < lefties.size(); i++) {
+        int current_left = lefties[i];
+        int counter = 0;
+
+        for (int j = 0; j < righties.size(); j++) {
+            int current_right = righties[j];
+            if (current_right == current_left) {
+                counter++;
+            }
+        }
+
+        sum += current_left * counter;
+    }
+
+    return sum;
 }
