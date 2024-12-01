@@ -87,6 +87,11 @@ int calculate_similarity(std::vector<int>& lefties, std::vector<int>& righties) 
 
         for (int j = 0; j < righties.size(); j++) {
             int current_right = righties[j];
+
+            // cannot possibly get it
+            if (current_right > current_left) {
+                break;
+            }
             if (current_right == current_left) {
                 counter++;
             }
